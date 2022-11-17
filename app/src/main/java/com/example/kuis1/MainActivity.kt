@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity() {
                 override fun onTick(millisUntilFinished: Long) {
                     val waktuTersisa = millisUntilFinished/1000L
                     val ba = input.toInt()
-                    var wow = waktuTersisa.toInt()
+                    val wow = waktuTersisa.toInt()
                     detik = ba - wow
                     obser.subscribeBy{
                         tv.text = it.toString()
