@@ -8,7 +8,6 @@ import android.widget.TextView
 import io.reactivex.rxjava3.core.Observable
 import io.reactivex.rxjava3.kotlin.subscribeBy
 
-
 class MainActivity : AppCompatActivity() {
     private lateinit var timer: CountDownTimer
     private var detik: Int = 0
@@ -45,7 +44,6 @@ class MainActivity : AppCompatActivity() {
         fun stopTimer (){
             timer.cancel()
         }
-
 
         findViewById<Button>(R.id.start).setOnClickListener{
             waktu = input.toLong()
